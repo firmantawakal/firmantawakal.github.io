@@ -170,7 +170,7 @@ body{
   height: 47px;
   border-bottom: 1px solid #47c2cc;
   /* position: absolute; */
-  margin-left: 45%;
+  margin: 0 auto;
   z-index: 3000;
 }
 
