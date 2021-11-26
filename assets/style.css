@@ -9,22 +9,53 @@ html{
   overflow-x: hidden;
 }
 
-.gallery-table table, .gallery-table th, .gallery-table td {
-  border: 10px solid #47c2cc;
-  width: 100%; 
+@media screen and (max-width: 480px) {
+  body {
+     max-width: 100vw;
+     overflow-x: hidden;
+  }
+}
+
+ .gallery-table th, .gallery-table td {
+  border: 10px solid #48c2cd;
   text-align: center;
+  table-layout: fixed;
+  vertical-align: middle;
+  /* position:relative; */
+}
+
+ .gallery-digital,.gallery-digital th, .gallery-digital td {
+  text-align: center;
+  table-layout: fixed;
+  vertical-align: top;
+  /* position:relative; */
+}
+
+.gallery-digital {
+  max-height: 400px;
+}
+
+.gallery-table table {
+  width: 100%;
 }
 
 .bg-white{
   background-color: #ffffff;
 }
 
-.table-child table {
+.table-child {
   border-collapse: collapse;
 }
-.table-child table td {
-  border: 5px solid black; 
+
+.table-child tr{
+  border-right: 10px solid #48c2cd; 
+  border-bottom: 10px solid #48c2cd; 
 }
+.child-td{
+  border-right: 10px solid #48c2cd; 
+  border-bottom: 10px solid #48c2cd; 
+}
+
 table tr:first-child td {
   border-top: 0;
 }
@@ -59,9 +90,8 @@ body{
 }
 
 /* custom modal */
-.custom-header{
-  background-color: #ffffff;
-  color: #47c2cc;
+.custom-header .navbar-nav .nav-link{
+  color: #47c2cc !important;
   width: 100% !important;
   white-space: nowrap;
 }
@@ -94,6 +124,7 @@ body{
 
 .cyan-segment{
   background-color: #48c2cd;
+  width: 100%;
 }
 
 .second-segment{
@@ -148,6 +179,12 @@ body{
   height: 100%;
   object-fit: cover;
   padding-top: 100px;
+}
+
+.fit-image-first{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-icon{
