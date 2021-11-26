@@ -6,6 +6,7 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .gallery-table table, .gallery-table th, .gallery-table td {
